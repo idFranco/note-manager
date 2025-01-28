@@ -16,7 +16,7 @@ npm install crypto-es
 
 ## Description
 
-NoteManager It is a web site application for note management. This allows users to create, list, and delete notes, as well as manage secret keys.
+NoteManager is a web site application for note management. This allows users to create, list, and delete notes, as well as manage secret keys.
 The information is stored in client-side database (IndexedDB) and encrypted (in some cases) with CryptoES.
 
 ## Project Structure:
