@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { CreateCredentialComponent } from './components/login/credential-administration/credential/create-credential.component';
+import { CreateCredentialComponent } from './components/login/credential/create-credential.component';
 import { AuthSetPasswordGuard } from './core/guards/auth-set-password.guard';
-import { ChangeCredentialComponent } from './components/login/credential-administration/credential/change-credential.component';
+import { ChangeCredentialComponent } from './components/login/credential/change-credential.component';
 import { LoginComponent } from './components/login/login.component';
 
 

@@ -3,19 +3,19 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { materialImports } from '../../../../material.imports';
-import { LoginModel } from '../../../../core/models/login.model';
-import { CredentialModel } from '../../../../core/models/credential.model';
-import { credentialModelHelper } from '../../../../core/helpers/modeler.helper';
-import { CryptoService } from '../../../../core/services/crypto.service';
-import { handleMessageError } from '../../../../core/handlers/message-error.handle';
-import { CredentialService } from '../../../../core/services/credential.service';
+import { materialImports } from '../../../material.imports';
+import { LoginModel } from '../../../core/models/login.model';
+import { CredentialModel } from '../../../core/models/credential.model';
+import { credentialModelHelper } from '../../../core/helpers/modeler.helper';
+import { CryptoService } from '../../../core/services/crypto.service';
+import { handleMessageError } from '../../../core/handlers/message-error.handle';
+import { CredentialService } from '../../../core/services/credential.service';
 
 @Component({
   imports: [CommonModule,
             ...materialImports],
-  templateUrl: '.././credential.component.html',
-  styleUrl: '../.././login.component.scss'
+  templateUrl: './credential.component.html',
+  styleUrl: '.././login.component.scss'
 })
 export class BaseCredentialComponent {
 
