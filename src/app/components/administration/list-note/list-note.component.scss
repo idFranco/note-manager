@@ -1,0 +1,52 @@
+mat-form-field {
+  width: 25%;
+  margin-bottom: 16px;
+  background-color: white;
+
+  .mat-form-field-outline {
+    background-color: white;
+    border-radius: 4px;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0;
+  }
+
+  .mat-form-field-outline-start,
+  .mat-form-field-outline-end {
+    border-color: white;
+  }
+
+  .mat-input-element {
+    color:  white;
+  }
+
+  .mat-form-field-label {
+    color:  rgb(19, 18, 18);
+    background-color: white;
+  }
+
+  .mat-form-field-flex {
+    align-items: center;
+  }
+}
+
+/* Ajustes para la columna "Actions" */
+.mat-column-actions {
+  width: 80px;
+  text-align: center;
+  white-space: nowrap;
+
+  .mat-icon-button {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 4px;
+
+    .mat-icon {
+      font-size: 18px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+}

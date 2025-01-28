@@ -1,0 +1,45 @@
+@use '../../../variables' as vars;
+
+.btnSave {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+mat-card {
+  max-width: 400px;
+  margin: 2rem auto;
+  align-items: center;
+  background-color: vars.$card-bg-color;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  align-content: center;
+
+  mat-card-header {
+    padding:  1rem;
+
+    mat-card-title {
+      font-size: 1.5rem;
+      color: vars.$text-color;
+      margin-top: 2rem;
+    }
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  mat-card-actions {
+    width: 100%;
+    margin-top: 16px;
+  }
+}

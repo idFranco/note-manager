@@ -1,0 +1,45 @@
+<mat-card class="note-card">
+  <mat-card-header>
+    <mat-card-title>{{ title }}</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <form [formGroup]="setCredentialForm" (ngSubmit)="saveNote()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Title</mat-label>
+        <input matInput type="text" placeholder="Enter your title" formControlName="title" required>
+        <mat-error *ngIf="setCredentialForm.controls['title'].invalid && setCredentialForm.controls['title'].touched">
+          Title is required.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Enter your password" formControlName="password" required>
+        <mat-error *ngIf="setCredentialForm.controls['password'].invalid && setCredentialForm.controls['password'].touched">
+          Password is required.
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>Note</mat-label>
+        <input matInput type="text" placeholder="Enter your note" formControlName="notes">
+      </mat-form-field>
+
+      <mat-card-actions>
+        <button mat-raised-button color="primary" type="submit" [disabled]="setCredentialForm.invalid" class="btnSave">
+          Save
+        </button>
+      </mat-card-actions>
+    </form>
+
+    <div *ngIf="viewBtnCancel">
+      <mat-card-actions>
+        <button mat-raised-button color="secondary" (click)="onClose()" class="btnSave">Cancel</button>
+      </mat-card-actions>
+    </div>
+
+    <p *ngIf="errorMessage.length > 0" class="error-message">
+      {{ errorMessage }}
+    </p>
+  </mat-card-content>
+</mat-card>

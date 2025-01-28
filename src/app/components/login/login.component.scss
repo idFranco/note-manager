@@ -1,0 +1,67 @@
+@use '../../variables' as vars;
+
+.login-button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.error-message {
+  color: #f44336;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signup-link a {
+  color: #3f51b5;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+mat-card {
+  max-width: 400px;
+  margin: 2rem auto;
+  align-items: center;
+  background-color: vars.$card-bg-color;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  align-content: center;
+
+  mat-card-header {
+    padding:  1rem;
+
+    mat-card-title {
+      font-size: 1.5rem;
+      color: vars.$text-color;
+      margin-top: 1rem;
+    }
+
+    mat-card-subtitle {
+      color: vars.$primary-color;
+      font-size: 1rem;
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+
+  mat-form-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  mat-card-actions {
+    width: 100%;
+    margin-top: 16px;
+  }
+}
