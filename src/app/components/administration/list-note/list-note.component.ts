@@ -25,8 +25,8 @@ import { EditNoteModalComponent } from '../record-note/record/edit-note-modal.co
 export class ListNoteComponent implements AfterViewInit {
 
   displayedColumns: string[] = ['actions',
-                                'title',
                                 'password',
+                                'title',
                                 'notes',];
 
   lNote: NotepadModel[] = [];

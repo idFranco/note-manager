@@ -17,11 +17,6 @@
       </td>
     </ng-container>
 
-    <ng-container matColumnDef="title">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th>
-      <td mat-cell *matCellDef="let note">{{ note.title.toUpperCase() }}</td>
-    </ng-container>
-
     <ng-container matColumnDef="password">
       <th mat-header-cell *matHeaderCellDef mat-sort-header>Password</th>
       <td mat-cell *matCellDef="let note" class="mat-column-actions">
@@ -29,6 +24,11 @@
           <mat-icon title="View password">visibility</mat-icon>
         </button>
       </td>
+    </ng-container>
+
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th>
+      <td mat-cell *matCellDef="let note">{{ note.title.toUpperCase() }}</td>
     </ng-container>
 
     <ng-container matColumnDef="notes">
